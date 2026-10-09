@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>闇の一軒家 ― 脱出</title>
+<link rel="stylesheet" href="style.css"><script>addEventListener('error',e=>{const d=document.createElement('div');d.style.cssText='position:fixed;left:0;top:0;right:0;z-index:99;background:#500;color:#fff;font:12px monospace;padding:6px;white-space:pre-wrap';d.textContent='ERROR: '+e.message+' ('+String(e.filename||'').split('/').pop()+':'+e.lineno+')';(document.body||document.documentElement).appendChild(d)})</script></head><body>
+<div id="wrap"><canvas id="c"></canvas>
+<div class="h" id="ob"></div><div class="h" id="fps"></div><div class="h" id="msg"></div><div class="h" id="inv"></div><div class="h" id="stm"><i id="stf"></i></div><div class="h" id="bat"><i id="btf"></i></div><div class="h" id="pr"></div><div class="h" id="dot"></div>
+<div id="tc" hidden>
+ <div id="lookpad"></div>
+ <div id="joy"><i id="knob"></i></div>
+ <button class="tb" id="tb-menu">☰</button>
+ <div id="tbs"><button class="tb" id="tb-f">調べる</button><button class="tb" id="tb-e">ライト</button><button class="tb" id="tb-c">しゃがむ</button><button class="tb" id="tb-s">スライド</button><button class="tb" id="tb-d">ダッシュ</button><button class="tb" id="tb-h">隠れる</button><button class="tb" id="tb-g">鍵を使う</button></div>
+</div>
+<div class="ov" id="ov">
+ <div class="pn" id="mn"><h1 id="ttl">闇の一軒家</h1>
+  <p style="text-align:center;opacity:.7">― 脱出 ―</p>
+  <p>深夜、目を覚ますと家には誰もいなかった。玄関は施錠され、暗い廊下を“何か”が歩いている。懐中電灯と電池を探し、家中に隠された12個の鍵を集めて玄関から脱出せよ。</p>
+  <button id="go">ゲーム開始</button><button id="stb">設定</button>
+  <p id="kbhint" style="opacity:.75;font-size:12px">WASD 移動 ／ マウス 視点 ／ Shift ダッシュ ／ C しゃがみ ／ Shift＋C スライディング ／ E ライト ／ F 調べる（日記） ／ H 隠れる ／ G 鍵を使う ／ Esc メニュー・設定<br>走る・滑る音は遠くまで届く。しゃがめば気づかれにくい。</p><p id="tchint">【スマホ】左スティックで移動 ／ 右側ドラッグで視点 ／ ダッシュ・しゃがむ・スライド・ライト・調べる・隠れる・鍵を使う ボタン ／ 右上☰でメニュー・設定<br>横画面でのプレイをおすすめします。縦持ちのときは自動で横向き表示（画面を回転）になります。</p></div>
+ <div class="pn" id="set" hidden></div>
+</div>
+<div class="ov" id="end" hidden><div class="pn"><h1 id="et"></h1><p id="ed" style="text-align:center"></p><button id="rt">もう一度</button></div></div>
+</div>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script></body></html>
